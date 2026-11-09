@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz de Programação</title>
+
+    <!-- Conecta o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Quiz de Programação</h1>
+        <p class="subtitulo">Teste seus conhecimentos!</p>
+
+        <!-- Área do quiz -->
+        <section id="areaQuiz">
+
+            <!-- Informações da pergunta -->
+            <div class="informacoes">
+                <span id="numeroPergunta">Pergunta 1 de 5</span>
+                <span id="pontuacao">Pontos: 0</span>
+            </div>
+
+            <!-- Barra de progresso -->
+            <div class="barra-fundo">
+                <div id="progresso"></div>
+            </div>
+
+            <!-- Pergunta atual -->
+            <h2 id="pergunta">Carregando pergunta...</h2>
+
+            <!-- Alternativas criadas pelo JavaScript -->
+            <div id="alternativas"></div>
+
+            <!-- Mensagem de acerto ou erro -->
+            <p id="feedback"></p>
+
+            <!-- Botão para avançar -->
+            <button id="proximo" disabled>
+                Próxima pergunta
+            </button>
+
+        </section>
+
+        <!-- Área do resultado final -->
+        <section id="resultado" class="escondido">
+
+            <h2>Quiz finalizado!</h2>
+
+            <p id="mensagemFinal"></p>
+
+            <p id="pontuacaoFinal"></p>
+
+            <button id="reiniciar">
+                Jogar novamente
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- Conecta o JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
